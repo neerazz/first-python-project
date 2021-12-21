@@ -1,5 +1,5 @@
 # https://github.com/Pierian-Data/Complete-Python-3-Bootcamp/blob/master/03-Methods%20and%20Functions/03-Function%20Practice%20Exercises.ipynb
-from math import sqrt
+import string
 
 
 def lesser_of_two_evens(a, b):
@@ -128,3 +128,25 @@ print(print_big('b'))
 print(print_big('c'))
 print(print_big('d'))
 print(print_big('e'))
+
+
+def is_pangram(str1):
+    alphabets_map = {}
+
+    def get_alphabets():
+        for i, letter in enumerate(string.ascii_lowercase):
+            alphabets_map[letter] = i
+
+    get_alphabets()
+    counts = [0] * 26
+    for letter in str1.lower():
+        if letter in alphabets_map:
+            counts[alphabets_map[letter]] += 1
+    for cnt in counts:
+        if cnt == 0:
+            return False
+    return True
+
+
+print(is_pangram("The quick brown frog jumps over the lazy dog"))
+print(is_pangram("The quick brown fox jumps over the lazy dog"))

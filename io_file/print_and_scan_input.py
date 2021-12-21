@@ -4,7 +4,7 @@ bot_name = input("Enter the Name:")
 birth_year = input("Enter birth Year:")
 print(f"Hello! My bot_name is {bot_name}.")
 print(f"I was created in {birth_year}.")
-print(f"What a great name you have, {bot_name}.")
+print(f"What a great owner you have, {bot_name}.")
 
 print('Let me guess your age.')
 print('Enter remainders of dividing your age by 3, 5 and 7.')

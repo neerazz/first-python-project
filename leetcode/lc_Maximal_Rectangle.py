@@ -1,6 +1,3 @@
-import numpy as np
-
-
 class Solution:
     def maximalRectangle(self, matrix) -> int:
         rows = len(matrix)

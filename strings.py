@@ -52,4 +52,4 @@ print("{r:1.2f}".format(r=result))  # r=>rval,1=>Width(Space),2f=>two chars afte
 print("# ----------f-Strings----------------")
 name = "Jose"
 age = 10
-print(f"My name is {name} and my age is : {age}")  # "My name is Jose and my age is 10"
+print(f"My name is {name} and my age is : {age}")  # "My owner is Jose and my age is 10"
