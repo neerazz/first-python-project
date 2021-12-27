@@ -6,7 +6,7 @@ You probably played the tictacktow at least once in your life; now you can actua
 
 Let's look at a brief overview of what you are going to build in this project. Here is what the gameplay should look like:
 
-In the main menu, a player can choose to either play or exit the tictacktow. If the user chooses to play, the computer
+In the main menu, a player can choose to either play_option or exit the tictacktow. If the user chooses to play_option, the computer
 picks a word from a list: this will be the answer to the puzzle. The computer asks the player to enter a letter that
 they think is in the word. If that letter does not appear in the word and this letter hasn't already been guessed,
 the computer counts it as a miss. A player can only afford 8 misses before the tictacktow is over. If the letter does occur
@@ -16,7 +16,7 @@ menu. This may sound complex, but the project is split into small stages with hi
 product is sure to be replayable and quite engaging!
 
 Let's start with an announcement that will greet the player. You already know how to print something using Python.
-Try to apply that knowledge to entice your friends to play with an announcement for your tictacktow!
+Try to apply that knowledge to entice your friends to play_option with an announcement for your tictacktow!
 
 """
 import random

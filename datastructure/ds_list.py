@@ -25,7 +25,7 @@ def remove_word_from_list(word):
 
 
 def remove_at_end():
-    print(word_list.pop())  # By default pop's the last item
+    print(word_list.pop())  # By default, pop's the last item
 
 
 def remove_at_index(index):
