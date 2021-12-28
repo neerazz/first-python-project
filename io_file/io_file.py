@@ -124,8 +124,7 @@ def delete_dir(filepath):
 
 
 file_name = "print_and_scan_input.py"
-different_dir = "D:\\Projects\\Python\\first-python-project\\io_file"
-new_dir = "D:\\Projects\\Python\\first-python-project\\io_file\\files"
+new_dir = join_path(get_current_working_directory(), "files")
 new_file_names = ["file_" + str(i) + ".txt" for i in range(10)]
 
 print("*******************************")
@@ -142,10 +141,7 @@ files_recursively = list_all_files_recursively(new_dir)
 print(f"List all files recursively in {new_dir} directory before moving : \n{files_recursively}")
 
 print("*******************************")
-print(open_and_read_file(file_name))
-
-print("*******************************")
-print(open_and_read_all_in_file(file_name))
+print(open_and_read_file(join_path(new_dir, new_file_names[1])))
 print(open_and_read_all_in_file(join_path(new_dir, new_file_names[1])))
 
 print("*******************************")
@@ -175,6 +171,10 @@ print(f"List all files recursively in {new_dir} directory : {files_recursively}"
 print("*******************************")
 print(f"List all files in {even_dir} directory : {list_all_files(even_dir)}")
 print(f"List all files in {odd_dir} directory : {list_all_files(odd_dir)}")
+
+print("*******************************")
+print(f"Zipping the files in the {new_dir} directory.")
+zip_file(new_dir, "zip", "files")
 
 print("*******************************")
 print("Deleting all the test files created.")
