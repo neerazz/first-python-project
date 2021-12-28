@@ -9,7 +9,7 @@ They turn over their top cards at the same time and the higher card wins.
 The player with the most cards at the end wins.
 '''
 
-from homework_and_mile_stones.mile_stone_war_game.Deck import Deck
+from homework_and_mile_stones.mile_stone_war_game.BlackjackDeck import BlackjackDeck
 from homework_and_mile_stones.mile_stone_war_game.Player import Player
 
 
@@ -25,7 +25,7 @@ class Game:
         self.create_deck()
 
     def create_deck(self):
-        self.deck = Deck()
+        self.deck = BlackjackDeck()
 
     def start_game(self):
         self.create_deck()

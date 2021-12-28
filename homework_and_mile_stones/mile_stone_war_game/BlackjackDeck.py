@@ -3,7 +3,7 @@ import random
 from homework_and_mile_stones.mile_stone_war_game.Card import Card
 
 
-class Deck:
+class BlackjackDeck:
     rank_char_dic = {}
 
     def __init__(self):
@@ -41,6 +41,6 @@ class Deck:
 
 
 if __name__ == "__main__":
-    print("Initializing Deck...")
+    print("Initializing BlackjackDeck...")
 else:
-    print("Importing Deck...")
+    print("Importing BlackjackDeck...")
